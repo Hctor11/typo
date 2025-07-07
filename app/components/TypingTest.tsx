@@ -227,7 +227,6 @@ export default function TypingTest() {
       <ResultModal
         open={showModal}
         wpm={wpm}
-        wpmHistory={wpmHistory}
         onClose={() => setShowModal(false)}
         accuracy={accuracy}
         charStats={charStats}

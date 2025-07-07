@@ -5,10 +5,9 @@ import { Line } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-export default function ResultModal({ open, wpm, wpmHistory, onClose, accuracy, charStats, consistency, rawWpm, errorCount, totalTime, wordTimes, wordWpm }: {
+export default function ResultModal({ open, wpm, onClose, accuracy, charStats, consistency, rawWpm, errorCount, totalTime, wordTimes, wordWpm }: {
   open: boolean;
   wpm: number | null;
-  wpmHistory: number[];
   onClose: () => void;
   accuracy: number;
   charStats: { correct: number, incorrect: number, extra: number, missed: number };
