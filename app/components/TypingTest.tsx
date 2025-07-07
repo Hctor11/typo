@@ -115,7 +115,7 @@ export default function TypingTest() {
       const raw = userInput.trim().split(/\s+/).length / ((Date.now() - (startTime ?? 0)) / 60000);
       setRawWpm(Math.round(raw));
     }
-  }, [userInput, targetText, startTime, wpmHistory]);
+  }, [userInput, targetText, startTime, wpmHistory, wordTimes]);
 
   // Historial de WPM por segundo
   useEffect(() => {
