@@ -1,0 +1,23 @@
+.letter
+  font-family: var(--font-ibm-plex-mono), monospace
+  font-size: 2rem
+  transition: color 0.1s
+
+.letter-correct
+  color: #fff
+  font-weight: bold
+
+.letter-incorrect
+  color: #EC7FA9ac
+  text-decoration: underline
+
+.letter-current
+  border-bottom: 2px solid #60a5fa
+  animation: blink-cursor 1s steps(2, start) infinite
+
+.letter-pending
+  color: #6b7280
+
+@keyframes blink-cursor
+  to
+    border-color: transparent

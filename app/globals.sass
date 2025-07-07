@@ -1,0 +1,32 @@
+@import "tailwindcss"
+
+:root
+  // Light mode
+  --background: #f6f8fa
+  --foreground: #232a3b
+  --navbar-bg: #e9ecf3
+  --navbar-border: #d1d5db
+  --navbar-text: #232a3b
+  --navbar-badge-bg: #e0e4ef
+  --navbar-badge-text: #6b7280
+
+@theme inline
+  --color-background: var(--background)
+  --color-foreground: var(--foreground)
+  --font-sans: var(--font-geist-sans)
+  --font-mono: var(--font-geist-mono)
+
+@media (prefers-color-scheme: dark)
+  :root
+    --background: #24283B
+    --foreground: #ededed
+    --navbar-bg: #181e2a
+    --navbar-border: #232a3b
+    --navbar-text: #fff
+    --navbar-badge-bg: #232a3b
+    --navbar-badge-text: #b4b8cf
+
+body
+  background: var(--background)
+  color: var(--foreground)
+  font-family: var(--font-ibm-plex-mono), monospace
